@@ -1,0 +1,3 @@
+[mcp_servers.sponsored-compute-kurodenjiro-43113]
+command = "npx"
+args = ["-y", "--package", "github:kurodenjiro/sponsored-compute", "sponsored-compute-mcp"]
