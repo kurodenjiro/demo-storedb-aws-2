@@ -48,11 +48,11 @@ The agent will:
 |---|---|
 | Network | Avalanche Fuji (`43113`) |
 | Campaign | `0x6f438efc0e0ecd571eaf3dbacd6628545efd2848d852060460800231d0ab622d` |
-| Grant per developer | `2.00 XSGD` |
+| Grant per developer | `0.02 AVAX` native gas grant |
 | Repository | `kurodenjiro/demo-storedb-aws-2` |
 | Verification | On-chain `GrantManager`, via Sponsored Compute MCP |
 
-`sponsored.json` is only a pointer. It contains no wallet, private key, AWS credential, API key or contract authority. Spending limits and approved recipients remain enforced on-chain.
+`sponsored.json` is only a pointer. It contains no wallet, private key, AWS credential, API key or contract authority. This campaign releases capped native AVAX to the developer's agent signer for deployment gas; it cannot be used on the XSGD/x402 merchant-payment path. Spending limits remain enforced on-chain.
 
 ## Run locally
 
@@ -87,7 +87,7 @@ sam build
 sam deploy --guided
 ```
 
-The stack output prints `ApiUrl`. AWS billing is separate from the XSGD campaign: the grant demonstrates purpose-bound agent spending and onboarding; it does not impersonate AWS credits or hide cloud costs.
+The stack output prints `ApiUrl`. AWS billing is separate from the AVAX gas campaign: the grant helps the agent perform on-chain setup and deployment-related transactions; it does not impersonate AWS credits or hide cloud costs.
 
 ## Why this matters for vibecoding
 
