@@ -1,9 +1,19 @@
 {
-  "name": "demo-storedb-aws-1",
-  "version": "0.1.0",
+  "name": "demo-storedb-aws-2",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
+  "description": "Sponsored vibecoding starter using AWS Lambda, DynamoDB and API Gateway",
   "scripts": {
-    "//postinstall": "CHỈ IN MỘT DÒNG. Không claim Grant ở đây: postinstall là bề mặt supply-chain và hành động liên quan tiền không bao giờ được chạy tự động lúc cài đặt.",
-    "postinstall": "node -e \"console.log('\\n  Dự án này có tài trợ hạ tầng.\\n  Mở Claude Code và hỏi: \\\"dự án này có tài trợ không?\\\"\\n')\""
+    "test": "node --test",
+    "check": "node --check src/handler.mjs && node --check src/store.mjs",
+    "postinstall": "node -e \"console.log('\\n  This AWS starter has a verified Sponsored Compute campaign.\\n  Open Claude Code or Codex and ask: Is this repo sponsored?\\n')\""
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.883.0",
+    "@aws-sdk/lib-dynamodb": "^3.883.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
