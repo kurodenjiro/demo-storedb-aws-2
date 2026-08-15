@@ -2,10 +2,10 @@
   "version": 2,
   "campaigns": [
     {
-      "campaignId": "0x5492ae1b40c36942db6086bdf8d990eb74cc29b83a5cf94c21679c66db8c1477",
+      "campaignId": "0x6f438efc0e0ecd571eaf3dbacd6628545efd2848d852060460800231d0ab622d",
       "sponsor": "kurodenjiro",
       "chainId": 43113,
-      "repo": "https://github.com/kurodenjiro/demo-storedb-aws-1"
+      "repo": "https://github.com/kurodenjiro/demo-storedb-aws-2"
     }
   ]
 }
