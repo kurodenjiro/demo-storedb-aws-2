@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "sponsored-compute-kurodenjiro-43113": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package",
+        "github:kurodenjiro/x402-hack",
+        "sponsored-compute-mcp"
+      ]
+    }
+  }
+}
